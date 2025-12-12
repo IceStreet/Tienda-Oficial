@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE STREET - Tienda Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../imagesG/ICO.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ICE STREET</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#coleccion">ROPA</a></li>
+                <li><a href="#gorras">GORRAS</a></li>      
+                <li><a href="#accesorios">BAGS</a></li>  
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>ARMA TU ESTILO<br>CON NOSOTROS</h1>
+            <p></p>
+            <a href="#coleccion" class="btn">VER ROPA <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <section id="coleccion" class="products">
+        <h2 class="section-title">T-SHIRTS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img1.JPG" alt="Secuency OLD">
+                </div>
+                <div class="product-info">
+                    <h3>Secuency OLD</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Secuency OLD" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img2.JPG" alt="Brown Jacket">
+                </div>
+                <div class="product-info">
+                    <h3>Brown Jacket</h3>
+                    <span class="price">$500 MXN</span>
+                    <button class="btn add-to-cart" data-product="Brown Jacket" data-price="500">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img3.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Croché Old Money</h3>
+                    <span class="price">$350 MXN</span>
+                    <button class="btn add-to-cart" data-product="Croché Old Money" data-price="350">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img4.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>T-SHIRT Light blue</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="T-SHIRT Light blue" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img5.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>T-SHIRT blue stripes</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="T-SHIRT blue stripes" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img6.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Brown long</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Brown long" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img7.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Bronw Line</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Bronw Line" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img8.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>T-shirt LA</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="T-shirt LA" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img9.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>T-Shirt Basic White</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="T-Shirt Basic White" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img10.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>T-Shirt Floral White</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="T-Shirt Floral White" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img11.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Cat Love</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Cat Love" data-price="890">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img12.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Black collared Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Black collared Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img13.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Black Shirt Floral</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Black Shirt Floral" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img14.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Classic White Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Classic White Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img15.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Beige Petal Print Shirt</h3>
+                    <span class="price">$350 MXN</span>
+                    <button class="btn add-to-cart" data-product="Beige Petal Print Shirt" data-price="350">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img16.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>White T-Shirt Embroidered</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="White T-Shirt Embroidered" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img17.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Blue Vybes</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Blue Vybes" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img18.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Olive Green Shirt</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Olive Green Shirt" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img19.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Cow Style Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Crochet Style Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img20.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Crochet Style Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Crochet Style Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img21.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Formal Polo Shirt</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Formal Polo Shirt" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img22.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Sport Academy T-shirt</h3>
+                    <span class="price">$200 MXN</span>
+                    <button class="btn add-to-cart" data-product="Sport Academy T-shirt" data-price="200">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img23.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Old Money Shirt</h3>
+                    <span class="price">$300 MXN</span>
+                    <button class="btn add-to-cart" data-product="Old Money Shirt" data-price="300">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img24.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Back To City Black and White</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Back To City Black and White" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img25.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Brazil T-Shirt</h3>
+                    <span class="price">$200 MXN</span>
+                    <button class="btn add-to-cart" data-product="Chinese Style Shirt" data-price="200">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img27.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Broklyn Black Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Broklyn Black Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img28.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Universe White Shirt</h3>
+                    <span class="price">$250 MXN</span>
+                    <button class="btn add-to-cart" data-product="Universe White Shirt" data-price="250">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/img29.JPG" alt="Chamarra Roja">
+                </div>
+                <div class="product-info">
+                    <h3>Chinese Style Shirt</h3>
+                    <span class="price">$200 MXN</span>
+                    <button class="btn add-to-cart" data-product="Chinese Style Shirt" data-price="200">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gorras" class="products">
+        <h2 class="section-title">CAPS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/G1.jpg" alt="Marron Wonder">
+                </div>
+                <div class="product-info">
+                    <h3>Marron Wonder</h3>
+                    <span class="price">$200 MXN</span>
+                    <button class="btn add-to-cart" data-product="Marron Wonder" data-price="200">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/G2.jpg" alt="Green Beach">
+                </div>
+                <div class="product-info">
+                    <h3>Green Beach</h3>
+                    <span class="price">$150 MXN</span>
+                    <button class="btn add-to-cart" data-product="Green Beach" data-price="150">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/G3.jpg" alt="WASC Blue Black">
+                </div>
+                <div class="product-info">
+                    <h3>WASC Blue Black</h3>
+                    <span class="price">$150 MXN</span>
+                    <button class="btn add-to-cart" data-product="WASC Blue Black" data-price="150">COMPRAR</button>
+                </div>
+            </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../imagesG/G4.jpg" alt="No Walk Blue" style="opacity: 0.6;"> 
+                    </div>
+                    <div class="product-info">
+                        <h3>No Walk Blue</h3>
+                        <span class="price">$200 MXN</span>
+                        <button class="btn add-to-cart" disabled>AGOTADO</button>
+                    </div>
+                </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/G5.jpg" alt="Grey Paradise">
+                </div>
+                <div class="product-info">
+                    <h3>Grey Paradise</h3>
+                    <span class="price">$150 MXN</span>
+                    <button class="btn add-to-cart" data-product="Grey Paradise" data-price="150">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accesorios" class="products">
+        <h2 class="section-title">BAGS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/BAG1.jpg" alt="Cadena">
+                </div>
+                <div class="product-info">
+                    <h3>Silver Chain 5mm</h3>
+                    <span class="price">$550 MXN</span>
+                    <button class="btn add-to-cart" data-product="Silver Chain 5mm" data-price="550">COMPRAR</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../imagesG/BAG2.jpg" alt="Mochila">
+                </div>
+                <div class="product-info">
+                    <h3>Urban Backpack</h3>
+                    <span class="price">$800 MXN</span>
+                    <button class="btn add-to-cart" data-product="Urban Backpack" data-price="800">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="white-section">
+        <div class="promo-banner">
+            <div class="promo-text">
+                <h3 class="promo-intro">PIEZAS UNICAS</h3>
+                <h2>ICE<br>STREET</h2>
+                <div class="price-tag">PUEDES COMPRAR PRODUCTOS DESDE $99</div>
+            </div>
+            <div class="promo-image">
+                <img src="../imagesG/Andre.png" alt="Modelo Ice Street">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>CONTACTANOS</h2>
+        <p style="color: #ccc; margin-bottom: 20px;">¿Tienes dudas sobre tu talla? Mándanos mensaje.</p>
+        
+        <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/icestreet99/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61555527663545"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/529993580530?text=Hola,%20me%20interesa%20un%20producto"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ICE STREET.</p>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgExpanded">
+    <div id="caption"></div>
+</div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // --- 1. WHATSAPP (Tu código original) ---
+        const whatsappNumber = "529993580530"; 
+        const buyButtons = document.querySelectorAll('.add-to-cart');
+        
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.getAttribute('data-product');
+                const productPrice = this.getAttribute('data-price');
+                const message = `¡Hola! Estoy interesado en comprar el siguiente producto:%0A%0A*Producto:* ${productName}%0A*Precio:* $${productPrice} MXN%0A%0APor favor, necesito información sobre disponibilidad, tallas y formas de pago.`;
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+                window.open(whatsappURL, '_blank');
+            });
+        });
+
+        // --- 2. NUEVO: VISOR DE IMÁGENES (LIGHTBOX) ---
+        
+        // Elementos del Modal
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("imgExpanded");
+        const closeBtn = document.querySelector(".close-modal");
+        
+        // Seleccionamos todas las imágenes de productos
+        const productImages = document.querySelectorAll('.product-image img');
+
+        productImages.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.style.display = "block"; // Mostrar fondo negro
+                modalImg.src = this.src;       // Poner la imagen seleccionada
+            });
+        });
+
+        // Función para cerrar al dar clic en la X
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Función para cerrar al dar clic fuera de la imagen (en el fondo negro)
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+</body>
+</html>
